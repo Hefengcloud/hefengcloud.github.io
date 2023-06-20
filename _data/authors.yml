@@ -1,0 +1,14 @@
+senluoshe:
+  name    : "森罗社"
+  avatar  : /assets/images/products/senluoshe.svg
+  bio     : "历史文化社区"
+  email   : senluoshe@qq.com
+  links:
+    - label: "网站"
+      icon: "fas fa-fw fa-link"
+      url: https://senluoshe.com
+
+tongcheng:
+  name    : "童程育儿"
+  avatar  : /assets/images/products/tongcheng.svg
+  bio     : "用 AI 相伴、你我童程"
