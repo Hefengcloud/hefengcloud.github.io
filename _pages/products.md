@@ -8,24 +8,27 @@ excerpt: >
   文化类社区、知识型产品<br>
   <small>用 AI 让知识创新更简单</small>
 parenting_row:
-  - image_path: /assets/images/products/hefeng-zen.png
-    alt: "童程育儿"
-    title: "童程育儿"
-    excerpt: "用 AI 陪伴，你我童程。评测、日签，童车，满足家长的各种育儿需求"
+  - image_path: /assets/images/products/tc-parenting-weapp.jpg
+    alt: 童程育儿
+    title: 童程育儿
+    excerpt: "**用 AI 陪伴，你我童程**。评测、日签、童车，满足家长的多种育儿需求"
+    url: /tongcheng/
+    btn_class: btn--primary
+    btn_label: 了解更多
 culture_row:
   - image_path: /assets/images/products/senluoshe.svg
-    alt: "历史文化社区——森罗社"
-    title: "历史文化社区——森罗社"
-    excerpt: "历史年表、人物传记、历史事件以及历史影视剧资源"
+    alt: 历史文化社区——森罗社
+    title: 历史文化社区——森罗社
+    excerpt: 历史年表、人物传记、历史事件以及历史影视剧资源
     url: https://senluoshe.com
-    btn_class: "btn--primary"
-    btn_label: "前往森罗社主页"  
-    excerpt: "历史年表、历史词汇、古代史书合集、历史人物合集"
+    btn_class: btn--primary
+    btn_label: 前往森罗社主页
+    excerpt: 历史年表、历史词汇、古代史书合集、历史人物合集
 language_row:
   - image_path: /assets/images/products/senluo-japanese.png
-    alt: "小程序——森罗日语"
-    title: "小程序——森罗日语"
-    excerpt: "日语五十音、假名卡片（书写、读音）、常用语、谚语"
+    alt: 小程序——森罗日语
+    title: 小程序——森罗日语
+    excerpt: 日语五十音、假名卡片（书写、读音）、常用语、谚语
 ---
 
 ## 童程育儿
