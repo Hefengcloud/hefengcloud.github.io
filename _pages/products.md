@@ -7,6 +7,11 @@ header:
 excerpt: > 
   文化类社区、知识型产品<br>
   <small>用 AI 让知识创新更简单</small>
+parenting_row:
+  - image_path: /assets/images/products/hefeng-zen.png
+    alt: "童程育儿"
+    title: "童程育儿"
+    excerpt: "用 AI 陪伴，你我童程。评测、日签，童车，满足家长的各种育儿需求"
 culture_row:
   - image_path: /assets/images/products/senluoshe.svg
     alt: "历史文化社区——森罗社"
@@ -15,14 +20,7 @@ culture_row:
     url: https://senluoshe.com
     btn_class: "btn--primary"
     btn_label: "前往森罗社主页"  
-  - image_path: /assets/images/products/hefeng-history-dict.png
-    alt: "小程序——和风历史辞典"
-    title: "小程序——和风历史辞典"
     excerpt: "历史年表、历史词汇、古代史书合集、历史人物合集"
-  - image_path: /assets/images/products/hefeng-zen.png
-    alt: "小程序——和风禅语"
-    title: "小程序——和风禅语"
-    excerpt: "宽心、解脱；暂停、反思；温柔、坚定；志向、毅力"
 language_row:
   - image_path: /assets/images/products/senluo-japanese.png
     alt: "小程序——森罗日语"
@@ -30,9 +28,9 @@ language_row:
     excerpt: "日语五十音、假名卡片（书写、读音）、常用语、谚语"
 ---
 
-## 育儿
+## 童程育儿
 
-> Comming soon
+{% include feature_row id="parenting_row" type="left" %}
 
 ## 历史文化
 
