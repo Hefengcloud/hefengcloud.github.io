@@ -3,42 +3,32 @@ layout: splash
 title: 公司产品
 permalink: /products/
 header:
-  overlay_color: '#00800066'
+  overlay_color: '#c5dff6'
 excerpt: > 
-  文化类社区、知识型产品<br>
-  <small>用 AI 让知识创新更简单</small>
-parenting_row:
-  - image_path: /assets/images/products/tc-parenting-weapp.jpg
-    alt: 童程育儿
-    title: 童程育儿
-    excerpt: "**用 AI 陪伴，你我童程**。评测、日签、童车，满足家长的多种育儿需求"
-    url: /tongcheng/
+  产品范畴：医疗 / 教育 / 物流<br>
+  <small>Medical / Eduation / Logistics </small>
+feature_row:
+  - image_path: /assets/images/products/language-cms.png
+    alt: 语言教育类产品
+    title: 语言教育类产品
+    excerpt: 语言学习CMS，语言学习类App
+    url: /products/languages/
     btn_class: btn--primary
-    btn_label: 了解更多
-culture_row:
-  - image_path: /assets/images/products/senluoshe.svg
-    alt: 历史文化社区——森罗社
-    title: 历史文化社区——森罗社
-    excerpt: 历史年表、人物传记、历史事件以及历史影视剧资源
-    url: https://senluoshe.com
+    btn_label: 查看详情
+  - image_path: /assets/images/products/residential-address-parsing-tool.png
+    alt: 居民地址解析工具
+    title: 居民地址解析工具
+    excerpt: 解析居民地址，生成结构化数据
+    url: /products/tools/residential-address-parsing
     btn_class: btn--primary
-    btn_label: 前往森罗社主页
-    excerpt: 历史年表、历史词汇、古代史书合集、历史人物合集
-language_row:
-  - image_path: /assets/images/products/senluo-japanese.png
-    alt: 小程序——森罗日语
-    title: 小程序——森罗日语
-    excerpt: 日语五十音、假名卡片（书写、读音）、常用语、谚语
+    btn_label: 查看详情
+  - image_path: /assets/images/products/health-survey.png
+    alt: 医疗健康筛查问卷
+    title: 医疗健康筛查问卷
+    excerpt: 多端支持： Web / App / 小程序
+    url: /products/surveys/
+    btn_class: btn--primary
+    btn_label: 查看详情
 ---
 
-## 童程育儿
-
-{% include feature_row id="parenting_row" type="left" %}
-
-## 历史文化
-
-{% include feature_row id="culture_row" type="left" %}
-
-## 语言学习
-
-{% include feature_row id="language_row" type="left" %}
+{% include feature_row %}

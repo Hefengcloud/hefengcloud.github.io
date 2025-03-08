@@ -1,14 +1,12 @@
 # main links
 main:
-  - title: "公司产品"
-    url: /products/
-  - title: "商业服务"
-    url: /services/
-  - title: "解决方案"
-    url: /solutions/
-  - title: "成功案例"
-    url: /success-cases/
-  - title: "公司动态"
+  - title: "首页"
+    url: /
+  - title: "博客"
     url: /blogs/
-  - title: "联系我们"
+  - title: "产品"
+    url: /products/
+  - title: "服务"
+    url: /services/
+  - title: "关于"
     url: /about/

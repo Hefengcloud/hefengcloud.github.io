@@ -3,7 +3,6 @@ layout: single
 title: 联系我们
 permalink: /about/
 sidebar: 
-  - image: /assets/images/contact/wechat.jpeg
   - image: /assets/images/contact/dingtalk.jpeg
 toc: true
 ---

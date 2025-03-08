@@ -3,12 +3,18 @@ layout: splash
 title: 商业服务
 permalink: /services/
 header:
-  overlay_color: '#A020F066'
-excerpt: 软件研发，数字营销 
+  overlay_color: '#c1dbf3'
+excerpt: > 
+  软件研发 / 内容营销 / 活动策划<br>
+  <small>Software Development / Content Marketing / Event Planning</small>
+
+feature_row:
+  - image_path: /assets/images/services/software-development.png
+    alt: 软件开发
+  - image_path: /assets/images/services/content-marketing.png
+    alt: 内容营销
+  - image_path: /assets/images/services/event-planning.png
+    alt: 活动策划
 ---
 
-## 软件研发
-
-App、网站、小程序、桌面应用
-
-## 数字营销
+{% include feature_row %}

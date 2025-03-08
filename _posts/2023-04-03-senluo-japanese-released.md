@@ -1,11 +1,13 @@
 ---
-title:  森罗日语小程序上线
+title: 【森罗日语】小程序上线
 categories: products
 tags:
   - 日语学习
   - 微信小程序
 author: senluoshe
 ---
+
+![森罗日语小程序码](/assets/images/products/senluo-japanese-weapp-qrcode.jpg)
 
 随着 AI 技术的再次火爆，相信很多人已经被震撼到了。毫无疑问，传统的日语教学模式必然面临巨大冲击。
 
@@ -22,5 +24,3 @@ author: senluoshe
 除了小程序，我们还将会在公众号和视频号等社交平台上发布更多的日语学习资料和实用技巧，让学习者可以随时随地获取学习资源和与其他学习者互动交流。
 
 欢迎大家扫码体验，让我们一起探索更加智能、高效的日语学习方式吧！
-
-![森罗日语小程序码](/assets/images/products/senluo-japanese.png)
