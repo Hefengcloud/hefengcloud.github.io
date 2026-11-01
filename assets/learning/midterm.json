@@ -1,0 +1,128 @@
+{
+  "source": "/assets/learning/95879efa835ffe4a.pdf",
+  "source_title": "G4S1英语期中知识点汇编",
+  "note": "按这份一页汇编整理复习要求；练习示例由本站补充。原件没有列出具体参考话题。",
+  "main": [
+    {
+      "title": "Our World Book 4 · Unit 1–2",
+      "subtitle": "All in Our Family / Fresh Food",
+      "items": [
+        [
+          "ow-vocabulary",
+          "Vocabulary：背默单词，并放进句子中使用。",
+          "/words/"
+        ],
+        [
+          "ow-grammar",
+          "Grammar Point：理解句型，分别做口头和书面回答。",
+          "/grammar/"
+        ],
+        [
+          "ow-chant",
+          "Song / chant：熟练朗读并跟唱。",
+          "/chants/"
+        ],
+        [
+          "ow-reading",
+          "Reading：朗读课文，寻找细节证据，回答问题和判断正误。",
+          "/reading/"
+        ],
+        [
+          "ow-writing",
+          "Writing：按教材单元要求完成小练笔。",
+          "/expressions/"
+        ]
+      ]
+    },
+    {
+      "title": "Kids’ Stories · S3–S5",
+      "subtitle": "My Dad / I Want to Be a Firefighter / A Lion and a Mouse",
+      "items": [
+        [
+          "story-fluency",
+          "流利、准确朗读，理解故事大意与细节。",
+          "/stories/my-dad/"
+        ],
+        [
+          "story-questions",
+          "用 what / when / where / how / why 提问，从原文找答案。",
+          "/stories/i-want-to-be-a-firefighter/"
+        ],
+        [
+          "story-retell",
+          "按事情发展顺序，用正确时态概述或复述故事。",
+          "/stories/a-lion-and-a-mouse/"
+        ]
+      ]
+    },
+    {
+      "title": "综合语法与话题说写",
+      "subtitle": "先理解，再说、再写",
+      "items": [
+        [
+          "tense-present",
+          "一般现在时：第三人称单数；there is / there are。",
+          "/grammar/"
+        ],
+        [
+          "comparatives",
+          "比较级 -er … than：描述人和物的差异。",
+          "/grammar/"
+        ],
+        [
+          "obligation-frequency",
+          "have to 表达义务；How often 表达频率；would like 表达意愿。",
+          "/grammar/"
+        ],
+        [
+          "tense-past",
+          "一般过去时：在故事、日记、歌谣中辨认 did / was / were。",
+          "/grammar/"
+        ],
+        [
+          "tense-continuous",
+          "现在进行时：理解正在发生的动作及已安排的未来计划。",
+          "/grammar/"
+        ],
+        [
+          "topic",
+          "话题说写：切合题意、有开头结尾，检查语法、拼写和标点。",
+          "/expressions/"
+        ]
+      ]
+    }
+  ],
+  "pep": [
+    {
+      "title": "PEP · Unit 1–3",
+      "subtitle": "Helping at home / My friends / Places we live in",
+      "items": [
+        [
+          "pep-talk",
+          "Let’s talk：A、B 部分能背诵并运用，语音语调自然。",
+          "/pep/"
+        ],
+        [
+          "pep-learn",
+          "Let’s learn：听写、默写单词，并在句型中运用。",
+          "/pep/"
+        ],
+        [
+          "pep-spell",
+          "Let’s spell：掌握字母组合，听音辨词、看词发音。",
+          "/pep/"
+        ],
+        [
+          "pep-read",
+          "Read and write：读懂短文、回答问题、完成选词填空。",
+          "/pep/"
+        ],
+        [
+          "pep-question",
+          "Big Question：围绕单元大问题做口头和书面表达。",
+          "/pep/"
+        ]
+      ]
+    }
+  ]
+}

@@ -51,3 +51,37 @@ node tests/browser.cjs
 ## PEP 分区
 
 PEP 教材与配套作业本 110 项资料在 `/pep/` 单独学习，可按单元、教材和类型筛选。主线保留 176 项进阶资料。Mid 2 原件包含多教材内容，在基础专区的综合资料栏单独保存。主线不显示 PEP 音轨、拼读卡片或 ck 练习，也不计入 PEP 完成数；原有学习状态保留。旧 `/phonics/` 路径提供前往基础专区的入口。导入分类规则在 `scripts/content_tracks.py`，重新导入不会恢复混排。
+
+## 独立分享页面
+
+`/reading/` 展示阅读列表，单篇路径为 `/reading/<slug>/`。`/stories/`、`/dialogues/` 和 `/chants/` 的“听读”链接进入独立页面，页面内直接提供播放器、选段跟读、录音和复制分享链接。PEP 仍在基础专区。音频页由 `python3 scripts/build_listening_pages.py` 根据已导入目录生成。阅读、听读页面的专项浏览器验证分别为 `tests/reading.cjs`、`tests/listening.cjs`。
+
+## 期中知识点汇编
+
+新增 `G4S1英语期中知识点汇编.pdf` 后共有 288 项资料（268 段音频、20 份文档/图片）。扫描件已人工核对转录。`midterm.json` 保存复习路线：主线 14 项、PEP 5 项，自查状态仅保存在本机。语法、表达、词汇与 S3–S5 故事页已补充对应要求、复述和练笔入口；题库新增 8 道练习，旧题 ID 不变。原件与来源详情见 `docs/content-analysis.md`。
+
+## 复习信息架构
+
+```text
+/revision/                         复习中心
+├── mid/                           期中复习
+│   ├── oral/                      口试：Oral test review questions（34 项）
+│   │   └── <item-id>/             逐项练习
+│   ├── written/                   笔试：Mid-Revision 1–5
+│   │   ├── mid-1/<item-id>/        3 项背诵与 Passage
+│   │   ├── mid-2/<item-id>/        173 项词汇、句型、话题与阅读
+│   │   ├── mid-3/<item-id>/        8 篇阅读题
+│   │   ├── mid-4/                 原件待补充
+│   │   └── mid-5/                 原件待补充
+│   └── guide/                     共用范围、能力自查与语法说明（27 项）
+├── final/                         期末复习
+│   ├── oral/                      期末口试资料待补充
+│   └── written/                   期末笔试资料待补充
+└── practice/                      本站补充练习与错题
+```
+
+侧栏只保留“复习中心”。口试和笔试按资料来源分开；Mid 2 中的说写题仍属于笔试资料册，不因题型名称挪到 Oral test review。PEP 基础作为各册/共用范围内的独立筛选，不与主线进度混合。当前 G4S1 目录只提供 Mid 1–3，不把知识点汇编冒充 Mid 4/5，也不复用期中题作为期末题。
+
+数据与详情页由 `python3 scripts/build_mid_revision.py` 生成，当前结构位于 `_data/revision.json`。245 个稳定条目 ID 不变，保留 `hefeng-mid-revision-v1` 本机存储，旧回答与掌握状态继续可用；继续学习的记录按资料册、课程分组隔离。旧自查勾选也会迁入对应条目。旧 `/mid-revision/` 入口和全部详情链接跳转到对应新位置。
+
+录音回放/下载、草稿、分享、状态筛选仍可使用。浏览器验证：`node tests/revision-architecture.cjs`（可设置 `PLAYWRIGHT_PATH` / `SITE_URL`）。

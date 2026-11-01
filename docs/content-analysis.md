@@ -392,3 +392,34 @@ Counter({'resources': 181, 'dialogues': 25, 'phonics': 24, 'revision': 13, 'word
 - [imported] 四上英语录音包/PEP/四上U6/Unit 6 Listen and sing.mp3 → 6c1df13615f72ee3
 - [imported] 四上英语录音包/PEP/四上U6/Words in each unit Unit 6.mp3 → 7d393a9ae543b940
 - [duplicate] 四上英语录音包/背诵内容/dialogue 1.mp3 → 98afe249e4b50ab0
+
+## 新增：G4S1英语期中知识点汇编.pdf
+
+- 一页扫描图像，无可提取文字层；已逐项对照图像人工转录，原件与转录一并入库。校方落款为 2026.10。
+- 明确范围：PEP U1–3、Our World Book 4 U1–2、Kids’ Stories S3–S5、Mid/Quiz/Exercise/worksheet。
+- PEP 五项复习要求独立进入基础专区；原件按 mixed 分类。主线复习页展示 OW 五项、故事三项、语法五项与话题说写一项，共 14 项自查。
+- 语法页面补充一般现在时三单及 does + 原形、一般过去时 did / was / were；现有进行时说明补充当前动作与未来计划的区别。
+- 表达页面增加故事复述与话题说写框架、可保存的练笔区；故事 S3–S5 增加文本证据及复述提纲区。
+- 词汇页补充背默与造句方法；故事列表标出三个重点故事。
+- 新增 8 道本站练习，旧题序号保持不变，以保留错题记录。合计 18 题，其中主线 17 题、PEP 1 题。
+- 原件写“参考话题”但未列出具体话题。本站话题示例与练习均注明为补充；不将现有阅读练习冒充 Our World 教材课文。
+- 原汇编编号从（三）跳至（五），转录保留该编号。
+- 新增原件 1 份后，网站目录共 288 项资料：268 段音频、20 份文档/图片。当前 manifest 为初始导入审计记录加本次新增记录；源目录去重后不重写历史来源。
+- `document-overrides.json` 以原件 SHA-256 保存已核对转录，导入脚本重新导入时可保留文字。
+
+
+## 逐项复习提取覆盖
+
+| 来源 | 提取内容 |
+|---|---|
+| Mid 1 | 风与太阳对话、Aunt Picky、室内农场 Passage 三项背诵；Passage 补充本站理解问答 |
+| Mid 2 III | 37 项 PEP 拼写词汇、17 组比较级、28 项 OW 拼写词汇，每项独立复习 |
+| Mid 2 IV | 68 项认读词汇/短语，含不规则过去式、家庭特征、消防员与家务用语；两条故事寓意 |
+| Mid 2 V–VII | 15 个句型、5 个话题、A Special School Day 阅读及三个问题 |
+| Mid-3 Reading | 8 篇原文与原题，前四篇回答问题、后四篇提出三个问题；答案为本站补充 |
+| Oral test review | 17 道 a–q 简答（含 7 道地图题）、14 项主动提问、3 个话题，总计 34 项 |
+| 期中汇编 | 14 项主线能力自查、5 项 PEP 要求，另接入 8 项本站语法讲解 |
+
+合计 245 个条目。PEP 分组为 37 项词汇、7 个基础句型、5 项要求，共 49 项；主线 196 项。
+
+口语原件 g/h 问题、o/p/q 目的地及若干主动提问留空，按 Suggested answers 补全并注明。职业提问 a 的原题与答案场景不同，保留原题 working with children + sport，并将参考答案 animals + sport 场景记入说明。pointer and decorator 更正为 painter and decorator；话题示范更正主语、every day 拼写与课后话题错误结尾，并为家庭计划补充否定句。地图保留原图，所有原件仍可核对。

@@ -9,6 +9,8 @@ ROOT=Path(__file__).resolve().parents[1]; dest=ROOT/'assets/learning';dest.mkdir
 def save(name,data): (dest/name).write_text(json.dumps(data,ensure_ascii=False,indent=2))
 stories=json.loads((args.english/'data/kids_stories/grade_4_term_1.json').read_text())['stories']; bysha={s['source_sha256']:s for s in stories}
 joy=json.loads((args.english/'data/joy_books/grade_4_term_1.json').read_text())
+overrides_path=dest/'document-overrides.json'
+overrides=json.loads(overrides_path.read_text()) if overrides_path.exists() else {}
 items=[]; seen={}; manifest=[]
 for p in sorted(args.source.rglob('*')):
  if not p.is_file():continue
@@ -59,6 +61,7 @@ Aunt Picky frowns and cries a lot.
    tree=ET.fromstring(z.read('word/document.xml')); ns={'w':'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
    item['text']='\n'.join(''.join(t.text or '' for t in para.findall('.//w:t',ns)) for para in tree.findall('.//w:p',ns))
  elif ext=='.png': item['text']='Aunt Picky 歌谣教材照片；文字已整理至歌谣页面。'
+ if sha in overrides: item.update(overrides[sha])
  seen[sha]=item;items.append(item);manifest.append({'source':rel,'id':ident,'status':'imported'})
 for item in items: item['track']=track_for(item)
 save('catalog.json',items);save('manifest.json',manifest)

@@ -3,5 +3,15 @@ title: "阅读时光"
 permalink: /reading/
 section: reading
 ---
-<div id="app" aria-live="polite"></div>
-<noscript>请启用 JavaScript 使用互动学习。<a href="{{ "/assets/learning/catalog.json" | relative_url }}">下载完整资料目录</a></noscript>
+<div id="app">
+  <div class="intro"><div><span class="eyebrow">READ · THINK · SHARE</span><h1>阅读时光</h1><p class="muted">选择一篇阅读，慢慢读、找线索，也可以分享给朋友。</p></div><span class="date-tag">8 篇主题阅读</span></div>
+  <div class="resource-list reading-list">
+    {% for reading in site.data.readings %}
+    {% assign reading_url = '/reading/' | append: reading.slug | append: '/' %}
+    <a class="resource-row reading-link" href="{{ reading_url | relative_url }}">
+      <div><span class="tag">{{ forloop.index }} / 8 · {{ reading.task }}</span><h2>{{ reading.title }}</h2><p>{{ reading.description }}</p><span class="source-note" data-reading-status="reading-{{ reading.id }}"></span></div>
+      <span class="reading-arrow">开始阅读 →</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>

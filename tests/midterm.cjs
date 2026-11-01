@@ -1,0 +1,16 @@
+const {chromium}=require(process.env.PLAYWRIGHT_PATH||'playwright');const assert=require('node:assert/strict');
+(async()=>{const browser=await chromium.launch({headless:true});try{
+ const root=process.env.SITE_URL||'http://127.0.0.1:4100';const page=await browser.newPage();page.setDefaultTimeout(15000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(root+'/revision/mid/guide/');await page.waitForSelector('.review-entry');assert.equal(await page.locator('.review-entry:visible').count(),22);assert.equal(await page.locator('[data-track="pep"]:visible').count(),0);
+ await page.goto(root+'/revision/mid/guide/requirement-tense-past/');await page.click('[data-review-mark="mastered"]');await page.reload();assert.equal(await page.locator('[data-review-mark="mastered"]').getAttribute('aria-pressed'),'true');
+ await page.goto(root+'/revision/practice/');await page.waitForSelector('#all-quiz');assert((await page.locator('#all-quiz').textContent()).includes('17'));
+ const questions=await (await page.request.get(root+'/assets/learning/quiz.json')).json();const active=questions.filter(q=>q[4]!=='pep');for(const q of active){assert.equal(await page.locator('#quiz h3').textContent(),q[0]);await page.click('[data-choice="'+q[2]+'"]');assert((await page.locator('#feedback').textContent()).startsWith('答对啦'));await page.click('#next');}
+ await page.goto(root+'/revision/mid/guide/?track=pep');await page.waitForFunction(()=>document.querySelector('#review-results').textContent.includes('5'));assert.equal(await page.locator('.review-entry:visible').count(),5);
+ await page.goto(root+'/grammar/');await page.waitForSelector('[data-done="grammar-past-simple"]');assert((await page.locator('#app').textContent()).includes('did / was / were'));
+ await page.goto(root+'/expressions/');await page.fill('#midterm-writing','My family helps each other.');await page.reload();await page.waitForSelector('#midterm-writing');assert.equal(await page.inputValue('#midterm-writing'),'My family helps each other.');
+ await page.goto(root+'/stories/');await page.waitForSelector('.source-links a');assert.equal(await page.locator('.source-links a').count(),3);
+ await page.goto(root+'/stories/my-dad/');await page.waitForFunction(()=>document.querySelector('#audio').readyState>=1);await page.fill('#story-retell','Who helps the family?');await page.reload();await page.waitForFunction(()=>document.querySelector('#audio').readyState>=1);assert.equal(await page.inputValue('#story-retell'),'Who helps the family?');
+ await page.goto(root+'/stories/the-crow-and-the-pitcher/');await page.waitForFunction(()=>document.querySelector('#audio').readyState>=1);assert.equal(await page.locator('#story-retell').count(),0);
+ await page.setViewportSize({width:390,height:844});for(const path of ['revision','pep','expressions']){await page.goto(root+'/'+path+'/');await page.waitForSelector('#app h1');assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));}
+ assert.deepEqual(errors,[]);console.log('PASS: midterm scope, PEP separation, 17 quiz answers, checklist persistence, grammar, writing and story drafts, mobile.');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});

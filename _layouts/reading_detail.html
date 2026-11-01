@@ -1,0 +1,12 @@
+---
+layout: learning
+---
+{% assign reading = site.data.readings[page.reading_id] %}
+<div id="app">
+  <a class="reading-back" href="{{ '/reading/' | relative_url }}">← 返回阅读列表</a>
+  <div class="intro"><div><span class="eyebrow">MID-REVISION III · READING {{ reading.id | plus: 1 }}</span><h1>{{ reading.title }}</h1><p class="muted">{{ reading.description }}</p></div></div>
+  <div class="reading-share"><button id="share-reading" class="button secondary">复制分享链接</button><span id="share-status" role="status"></span><input id="share-link" aria-label="本篇阅读的分享链接" readonly hidden></div>
+  <article class="panel"><span class="tag">{{ reading.task }}</span><div class="reading-body">{{ reading.text | escape | newline_to_br }}</div></article>
+  <section class="panel"><h2>我的回答 / 我的问题</h2><p class="muted">用完整句子作答，再回到原文寻找依据。回答只保存在本机，分享链接不会包含你的答案。</p><label class="source-note" for="reading-answer">写下你的答案或问题</label><textarea id="reading-answer" data-draft="reading-{{ reading.id }}" placeholder="在这里写下你的想法…"></textarea><small class="draft-status muted"></small><div data-reading-progress="reading-{{ reading.id }}"></div></section>
+  <div class="reading-pagination"><a class="button secondary" href="{{ '/reading/' | relative_url }}">返回列表</a><a class="button secondary" href="{{ reading.source | relative_url }}" target="_blank" rel="noopener">打开阅读原件 ↗</a>{% if page.reading_id < 7 %}{% assign next_id = page.reading_id | plus: 1 %}{% assign next_reading = site.data.readings[next_id] %}{% assign next_url = '/reading/' | append: next_reading.slug | append: '/' %}<a class="button" href="{{ next_url | relative_url }}">下一篇：{{ next_reading.title }} →</a>{% endif %}</div>
+</div>

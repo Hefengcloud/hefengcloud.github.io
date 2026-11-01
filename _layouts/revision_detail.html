@@ -1,0 +1,22 @@
+---
+layout: learning
+---
+{% assign item = site.data.revision.items | where: 'id', page.review_id | first %}
+{% capture back_url %}{{ item.list_url }}?track={{ item.track }}&category={{ item.category | url_encode }}{% endcapture %}
+<div id="app" data-review-detail="{{ item.id }}" data-review-track="{{ item.track }}" data-review-scope="mid-{{ item.paper }}">
+  <nav class="revision-breadcrumb" aria-label="复习层级"><a href="{{ '/revision/' | relative_url }}">复习中心</a><span> / </span><a href="{{ '/revision/mid/' | relative_url }}">期中复习</a><span> / </span>{% if item.assessment == 'written' %}<a href="{{ '/revision/mid/written/' | relative_url }}">笔试</a><span> / </span>{% endif %}<a href="{{ item.list_url | relative_url }}">{% if item.assessment == 'oral' %}口试{% elsif item.assessment == 'guide' %}复习范围与自查{% else %}{{ item.source }}{% endif %}</a></nav>
+  <a class="reading-back" href="{{ back_url | relative_url }}">← 返回{% if item.track == 'pep' %} PEP 基础{% endif %}复习列表</a>
+  <div class="intro"><div><span class="eyebrow">{{ item.category }}</span><h1>{{ item.title | escape }}</h1></div></div>
+  <div class="reading-share"><button data-share-review class="button secondary">复制本项链接</button><span id="review-share-status" role="status"></span><input id="review-share-url" aria-label="本项复习链接" readonly hidden></div>
+  <section class="panel"><h2>先独立练习</h2><div class="review-prompt">{{ item.prompt | escape | newline_to_br }}</div>
+  {% if item.map %}<figure class="oral-map"><a href="{{ '/assets/images/mid-revision/oral-map.png' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/mid-revision/oral-map.png' | relative_url }}" width="673" height="444" alt="指路题地图。起点为 Forest Street 南端的红色星号；点击可打开原图放大。"></a><figcaption>从红色 Start 出发。点击地图可放大查看；也可打开原题第 2 页。</figcaption></figure>{% endif %}
+  {% if item.note != '' %}<p class="lesson-task">整理说明：{{ item.note }}</p>{% endif %}
+  {% if item.link != '' %}<a class="button secondary" href="{{ item.link | relative_url }}" target="_blank" rel="noopener noreferrer">打开相关学习内容 →</a>{% endif %}
+  </section>
+  <section class="panel"><h2>我的回答 / 复述提纲</h2><label for="review-draft">可以先口述，再写下关键词或完整答案。</label><textarea id="review-draft" placeholder="写下本项的答案、例句或复习笔记…"></textarea><p id="review-draft-status" class="source-note" role="status"></p>
+  <details id="review-answer"><summary>{{ item.answer_label }} · 点击展开</summary><div class="example">{{ item.answer | escape }}</div><p class="source-note">示例不等于唯一答案，请按自己的实际情况表达。</p></details></section>
+  <section class="panel"><h2>录下自己的回答</h2><p class="muted">试着连续说完，再回放检查。录音不上传，离开页面会清除，可先下载保存。</p><button id="review-record">● 开始录音</button><audio id="review-recording" controls hidden></audio><a id="review-record-download" hidden>下载录音</a><p id="review-record-status" class="source-note" role="status"></p></section>
+  <section class="panel"><h2>这一项掌握了吗？</h2><p>{{ item.check }}</p><div class="review-status-buttons"><button data-review-mark="new" aria-pressed="false">未复习</button><button data-review-mark="learning" aria-pressed="false">需要再练</button><button data-review-mark="mastered" aria-pressed="false">✓ 已掌握</button></div><p id="review-mark-status" role="status"></p></section>
+  <div class="reading-pagination">{% if item.previous_url %}{% assign previous_url = item.previous_url %}<a class="button secondary" href="{{ previous_url | relative_url }}">← 同类上一项</a>{% endif %}{% if item.next_url %}{% assign next_url = item.next_url %}<a class="button" href="{{ next_url | relative_url }}">同类下一项 →</a>{% endif %}<a class="button secondary" href="{{ back_url | relative_url }}">返回列表</a></div>
+  <p class="source-note">来源：<a href="{{ item.source_url | relative_url }}" target="_blank" rel="noopener">{{ item.source }} ↗</a>{% if item.category contains '口语' %} · <a href="{{ '/assets/learning/e9b91fdcb897c4d7.pdf' | relative_url }}" target="_blank" rel="noopener">配套 Suggested answers ↗</a>{% endif %}</p>
+</div>

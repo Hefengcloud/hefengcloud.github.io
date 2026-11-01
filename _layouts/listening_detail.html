@@ -1,0 +1,16 @@
+---
+layout: learning
+---
+{% assign track = site.data.listening | where: 'id', page.audio_id | first %}
+{% assign list_url = '/' | append: page.section | append: '/' %}
+<div id="app">
+  <a class="reading-back" href="{{ list_url | relative_url }}">← 返回{% if page.section == 'stories' %}故事{% elsif page.section == 'chants' %}歌谣{% else %}对话{% endif %}列表</a>
+  <div class="intro"><div><span class="eyebrow">LISTEN · SHADOW · SHARE</span><h1>{{ page.title }}</h1><p class="muted">听原音、调语速、选段跟读，录下自己的声音。</p></div></div>
+  <div class="reading-share"><button id="share-reading" class="button secondary">复制分享链接</button><span id="share-status" role="status"></span><input id="share-link" aria-label="本篇听读的分享链接" readonly hidden></div>
+  {% include player.html %}
+  {% if page.section == 'stories' and track.order >= 3 and track.order <= 5 %}
+  <section class="panel"><span class="tag">期中重点 · Kids’ Stories S3–S5</span><h2>读懂，再复述</h2><p>先说故事大意，再找两个细节。从 what、when、where、how、why 中选能在原文找到答案的问题；原文没有交代的内容不要猜。</p><p class="lesson-task">先后顺序：First → Then → Finally。描述习惯与职业注意一般现在时；讲述已发生的事件注意过去时。</p><label for="story-retell">我的问题、答案与复述提纲</label><textarea id="story-retell" data-draft="retell-{{ track.id }}" placeholder="主要人物 / 大意 / 文本证据 / 我的复述…"></textarea><small class="draft-status muted"></small></section>
+  {% endif %}
+  <noscript><p>启用 JavaScript 可使用选段跟读与录音功能。</p><audio controls src="{{ track.url | relative_url }}"></audio><div class="reading-body">{{ track.text | escape | newline_to_br }}</div></noscript>
+  <a class="button secondary" href="{{ list_url | relative_url }}">返回列表</a>
+</div>

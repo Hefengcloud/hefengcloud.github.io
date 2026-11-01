@@ -1,0 +1,8 @@
+---
+title: 期中笔试复习
+permalink: /revision/mid/written/
+section: revision
+---
+<div id="app"><nav class="revision-breadcrumb" aria-label="复习层级"><a href="{{ '/revision/' | relative_url }}">复习中心</a><span> / </span><a href="{{ '/revision/mid/' | relative_url }}">期中复习</a><span> / 笔试</span></nav>
+<div class="intro"><div><span class="eyebrow">MID · WRITTEN REVISION</span><h1>期中笔试复习</h1><p class="muted">选择一份 Mid-Revision，再逐项复习其中的内容。PEP 基础仍在各册内单独分组。</p></div></div>
+<div class="resource-list">{% for paper in site.data.revision.papers %}<a class="resource-row" href="{{ paper.url | relative_url }}"><div><span class="tag">{% if paper.available %}{{ paper.count }} 项{% else %}待补充资料{% endif %}</span><h2>{{ paper.title }}</h2><p>{{ paper.description }}</p>{% if paper.available %}<p>主线 {{ paper.main_count }} 项{% if paper.pep_count > 0 %} · PEP {{ paper.pep_count }} 项{% endif %}</p>{% endif %}</div><span>{% if paper.available %}逐项复习 →{% else %}查看状态 →{% endif %}</span></a>{% endfor %}</div></div>

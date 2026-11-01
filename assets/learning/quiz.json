@@ -99,5 +99,85 @@
     ],
     0,
     "go along 表示沿着……走。"
+  ],
+  [
+    "She ___ to school every Monday.",
+    [
+      "go",
+      "goes",
+      "going"
+    ],
+    1,
+    "every Monday 表示习惯；She 后用第三人称单数 goes。"
+  ],
+  [
+    "Does he ___ the plants every day?",
+    [
+      "waters",
+      "watering",
+      "water"
+    ],
+    2,
+    "Does 已承担第三人称变化，后面的动词用原形 water。"
+  ],
+  [
+    "I ___ tired yesterday.",
+    [
+      "am",
+      "was",
+      "were"
+    ],
+    1,
+    "yesterday 表示过去；I 的过去式 be 动词用 was。"
+  ],
+  [
+    "They ___ happy last Friday.",
+    [
+      "were",
+      "was",
+      "are"
+    ],
+    0,
+    "last Friday 表示过去；They 搭配 were。"
+  ],
+  [
+    "What did Jack ___ last Saturday?",
+    [
+      "did",
+      "does",
+      "do"
+    ],
+    2,
+    "did 后用动词原形 do。"
+  ],
+  [
+    "He didn’t ___ to school yesterday.",
+    [
+      "went",
+      "go",
+      "goes"
+    ],
+    1,
+    "didn’t 后用动词原形 go，而不是 went。"
+  ],
+  [
+    "比较两个人的不同，哪个句子正确？",
+    [
+      "Amy is taller than Mike.",
+      "Amy is tall than Mike.",
+      "Amy is taller Mike."
+    ],
+    0,
+    "比较差异用比较级 + than。"
+  ],
+  [
+    "回答故事问题时，原文没有说明时间，应该怎么办？",
+    [
+      "猜一个时间",
+      "说明原文没有交代",
+      "把地点当作时间"
+    ],
+    1,
+    "阅读理解需要文本证据；原文未交代的细节不凭空补充。"
   ]
 ]
