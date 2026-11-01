@@ -1,0 +1,103 @@
+[
+  [
+    "She ___ long hair.",
+    [
+      "is",
+      "has",
+      "have"
+    ],
+    1,
+    "has + 名词；is + 形容词。"
+  ],
+  [
+    "He often ___ me with my homework.",
+    [
+      "help",
+      "helping",
+      "helps"
+    ],
+    2,
+    "He 是第三人称单数，动词用 helps。"
+  ],
+  [
+    "I ___ visiting my grandparents tomorrow.",
+    [
+      "am",
+      "is",
+      "are"
+    ],
+    0,
+    "I 搭配 am；am + visiting 表示安排。"
+  ],
+  [
+    "There ___ two shops in my community.",
+    [
+      "is",
+      "are",
+      "am"
+    ],
+    1,
+    "two shops 是复数，用 are。"
+  ],
+  [
+    "The girl is ___ than the boy.",
+    [
+      "fast",
+      "faster",
+      "fastest"
+    ],
+    1,
+    "than 前用比较级 faster。"
+  ],
+  [
+    "I’m good at ___.",
+    [
+      "paint",
+      "paints",
+      "painting"
+    ],
+    2,
+    "at 后的动词用 -ing 形式。"
+  ],
+  [
+    "She ___ to feed the pet.",
+    [
+      "has",
+      "have",
+      "having"
+    ],
+    0,
+    "She 搭配 has to。"
+  ],
+  [
+    "Which word ends with the /k/ sound?",
+    [
+      "sun",
+      "duck",
+      "hair"
+    ],
+    1,
+    "duck 中 ck 发 /k/。",
+    "pep"
+  ],
+  [
+    "“每周三次”是：",
+    [
+      "three weeks",
+      "three times a week",
+      "on three"
+    ],
+    1,
+    "次数 + a week 表示每周的频率。"
+  ],
+  [
+    "Go ___ Main Street and turn left.",
+    [
+      "along",
+      "under",
+      "between"
+    ],
+    0,
+    "go along 表示沿着……走。"
+  ]
+]

@@ -1,0 +1,394 @@
+# G4S1 内容分析
+
+共 358 个文件；有效文件 348 个；去重后 287 项。
+Counter({'imported': 287, 'duplicate': 61, 'ignored metadata': 10})
+Counter({'resources': 181, 'dialogues': 25, 'phonics': 24, 'revision': 13, 'words': 13, 'stories': 13, 'chants': 12, 'reading': 6})
+
+## 知识分类
+- W2：人物外貌、性格、is/has、频率副词、第三人称单数。
+- W2 同名 (1) 文件与 W3 作业：现在进行时表示未来安排、否定句、特殊疑问句。
+- W4：职业、like / be good at / prefer、家人职业介绍。
+- W6：人物、计划与职业综合复习。
+- W7/W8：社区地点、方位介词、there is/are、问路指路。
+- Mid 1：风与太阳对话、Aunt Picky、室内农场短文。
+- Mid 2：PEP U1–3、Our World U1–2、故事 S3–5；比较级、家务、种植、频率、口语话题。
+- Mid 3：8 篇阅读，家庭劳动、友谊、社区、菜园、遗传特征、消防员、助老、情绪。
+- PEP U3 PDF：社区、ck 拼读、阅读与项目任务。
+- Notetaking：记录词汇、语法、发音、例句，强调、分类、解释用途。
+- IMG_5757.PNG：Aunt Picky 清晰歌词照片，作为歌谣文字依据。
+- PEP U1–6、作业本 U1–6/Review/Revision、OW 学生用书和练习册：全部音频入库，按文件可识别知识类别分类。仅编号 OW 音轨保留编号，不推测标题。
+
+## 学习分区
+
+- PEP 教材与配套作业本共 110 项资料单独进入基础专区。
+- 主线 176 项资料；Mid 2 是混合教材原件，在基础专区综合资料栏另存。
+- 基础拼读与 ck 练习移入专区，主线列表、推荐、进度与错题不混入 PEP。
+
+## 质量与来源
+- 13 篇故事按源文件 SHA-256 匹配 LMS 转写及时间轴，WMA 转 MP3 供浏览器播放。转写为机器生成，可能存在识别误差。
+- 风与太阳按 SHA-256 匹配 LMS 对话文字；歌谣按照片和 Mid 1 整理。无已核对时间轴时提供手动 A–B 跟读。
+- 重复录音按 SHA-256 合并，catalog 保留全部源路径；macOS ._* 元数据忽略并记录。
+- W2 文件混入 Grade 5 足球拓展页，保留原件但不当作四上核心知识。W3/W4/W7 作业内部周次与文件名不一致，按主题归类。
+- 原文练习与参考答案保留；网站新增练习标为本站练习。个人进度、错题与笔记仅保存在当前浏览器。
+- LMS 参考：词汇熟练度、语法/表达分类、故事时间轴、拼读练习、错题和复习；静态站不需要 Django 服务。
+
+## 全量文件清单
+
+- [imported] 2025秋 英语作业本 四年级上册/Review 1/Review 1 - 1.mp3 → d25f149fa1abbf10
+- [imported] 2025秋 英语作业本 四年级上册/Review 1/Review 1 - 2.mp3 → 15a660fcb6ab69c5
+- [imported] 2025秋 英语作业本 四年级上册/Review 1/Review 1 - 3.mp3 → c413495081703e2b
+- [imported] 2025秋 英语作业本 四年级上册/Review 1/Review 1 - 4.mp3 → 0534ffc6d9221979
+- [imported] 2025秋 英语作业本 四年级上册/Review 1/Review 1 - 5.mp3 → be199235e28103da
+- [imported] 2025秋 英语作业本 四年级上册/Review 2/Review 2 - 1.mp3 → fd0247e01e9a0e06
+- [imported] 2025秋 英语作业本 四年级上册/Review 2/Review 2 - 2.mp3 → c4873fbd832d0423
+- [imported] 2025秋 英语作业本 四年级上册/Review 2/Review 2 - 3.mp3 → d02a367e11507f88
+- [imported] 2025秋 英语作业本 四年级上册/Review 2/Review 2 - 4.mp3 → 8e91236deed6b7d6
+- [imported] 2025秋 英语作业本 四年级上册/Review 2/Review 2 - 5.mp3 → c8626b8eed47b0cf
+- [imported] 2025秋 英语作业本 四年级上册/Review 2/Review 2 - 6.mp3 → 677bd5e25dffd024
+- [imported] 2025秋 英语作业本 四年级上册/Revision/Revision 1 - 1.mp3 → a7fd97b286a154d1
+- [imported] 2025秋 英语作业本 四年级上册/Revision/Revision 2 - 1.mp3 → be11b8e3512eb79d
+- [imported] 2025秋 英语作业本 四年级上册/Unit 1A/Unit 1A - let's learn.mp3 → 298db5e4d26e9786
+- [imported] 2025秋 英语作业本 四年级上册/Unit 1A/Unit 1A - let's spell - 1.mp3 → 4049c8b35bb286b2
+- [imported] 2025秋 英语作业本 四年级上册/Unit 1A/Unit 1A - let's spell - 2.mp3 → 7997bf01c7416d16
+- [imported] 2025秋 英语作业本 四年级上册/Unit 1A/Unit 1A - let's talk.mp3 → 597c7d59d357288e
+- [imported] 2025秋 英语作业本 四年级上册/Unit 1B/Unit 1B - let's learn.mp3 → 83c64e54b799d7b1
+- [imported] 2025秋 英语作业本 四年级上册/Unit 1B/Unit 1B - let's talk.mp3 → 1027e0e0456fdad8
+- [imported] 2025秋 英语作业本 四年级上册/Unit 2A/Unit 2A - let's learn.mp3 → 4c5334b1ccefc53c
+- [imported] 2025秋 英语作业本 四年级上册/Unit 2A/Unit 2A - let's spell.mp3 → 78aeee7fe29f6264
+- [imported] 2025秋 英语作业本 四年级上册/Unit 2A/Unit 2A - let's talk.mp3 → cc213db2a9a2b041
+- [imported] 2025秋 英语作业本 四年级上册/Unit 2B/Unit 2B - let's learn.mp3 → 5e65ec3e70dffb75
+- [imported] 2025秋 英语作业本 四年级上册/Unit 2B/Unit 2B - let's talk.mp3 → 999684d521fa89c1
+- [imported] 2025秋 英语作业本 四年级上册/Unit 3A/Unit 3A - let's learn.mp3 → c865864728b104bf
+- [imported] 2025秋 英语作业本 四年级上册/Unit 3A/Unit 3A - let's spell - 1.mp3 → efd3576b417563db
+- [imported] 2025秋 英语作业本 四年级上册/Unit 3A/Unit 3A - let's spell - 2.mp3 → 8cf156f3c73a55cf
+- [imported] 2025秋 英语作业本 四年级上册/Unit 3A/Unit 3A - let's talk.mp3 → 8d0388f583e9fddb
+- [imported] 2025秋 英语作业本 四年级上册/Unit 3B/Unit 3B - let's learn.mp3 → 50484d71c11de2cd
+- [imported] 2025秋 英语作业本 四年级上册/Unit 3B/Unit 3B - let's talk.mp3 → f6ee11f90727b920
+- [imported] 2025秋 英语作业本 四年级上册/Unit 4A/Unit 4A - Let's learn.mp3 → 5a3d1fc217aa420e
+- [imported] 2025秋 英语作业本 四年级上册/Unit 4A/Unit 4A - Let's spell.mp3 → 6ef1b6f99e0934c2
+- [imported] 2025秋 英语作业本 四年级上册/Unit 4A/Unit 4A - Let's talk.mp3 → e9270afac683f810
+- [imported] 2025秋 英语作业本 四年级上册/Unit 4B/Unit 4B - Let's learn.mp3 → 5820bd0a9d91f47a
+- [imported] 2025秋 英语作业本 四年级上册/Unit 4B/Unit 4B - Let's talk.mp3 → 74b088efc89b1d3a
+- [imported] 2025秋 英语作业本 四年级上册/Unit 5A/Unit 5A - Let's learn - 1.mp3 → 0af07ac3b8edd6ba
+- [imported] 2025秋 英语作业本 四年级上册/Unit 5A/Unit 5A - Let's learn - 2.mp3 → f7167bebaaa44158
+- [imported] 2025秋 英语作业本 四年级上册/Unit 5A/Unit 5A - Let's spell.mp3 → 1d17fe6f6ba89cdd
+- [imported] 2025秋 英语作业本 四年级上册/Unit 5A/Unit 5A - Let's talk.mp3 → e75d7d393736921b
+- [imported] 2025秋 英语作业本 四年级上册/Unit 5B/Unit 5B - Let's learn.mp3 → 5a6327461672c12a
+- [imported] 2025秋 英语作业本 四年级上册/Unit 5B/Unit 5B - Let's talk.mp3 → b9042c4dda6c8a7b
+- [imported] 2025秋 英语作业本 四年级上册/Unit 6A/Unit 6A - Let's learn.mp3 → 37a94da3825396a5
+- [imported] 2025秋 英语作业本 四年级上册/Unit 6A/Unit 6A - Let's spell - 1.mp3 → 40a63e04a6ec5cc3
+- [imported] 2025秋 英语作业本 四年级上册/Unit 6A/Unit 6A - Let's spell - 2.mp3 → 2f7f4244078e5587
+- [imported] 2025秋 英语作业本 四年级上册/Unit 6A/Unit 6A - Let's talk.mp3 → c72a07bab44a21ed
+- [imported] 2025秋 英语作业本 四年级上册/Unit 6B/Unit 6B - Let's learn.mp3 → 55963d32e37fb44c
+- [imported] 2025秋 英语作业本 四年级上册/Unit 6B/Unit 6B - Let's talk.mp3 → 1b9a36b2a295c942
+- [imported] Chant 3  P.49  Aunt Picky.mp3 → 78a5a6296841c255
+- [imported] G4S1- Mid-term oral review questions '26-'27- Suggested answers.pdf → e9b91fdcb897c4d7
+- [imported] G4S1- Mid-term oral review questions '26-'27.pdf → b766bd2a205ca640
+- [imported] G4S1- Notetaking.pdf → 6575acc90b48baa5
+- [imported] G4S1W2- Homework.docx → 4793e1f7a004e8ca
+- [imported] G4S1W2- Language Content Summary (1).pdf → 77350d59a575991b
+- [imported] G4S1W2- Language content summary.pdf → 44afff0c4c495ac5
+- [imported] G4S1W3- Homework.docx → 8b248072ee95b2b5
+- [imported] G4S1W4- Homework.docx → 4d25ba186f13057b
+- [imported] G4S1W4- Language Content Summary.pdf → 6d9b8d3b1071ae21
+- [imported] G4S1W6- Homework.docx → 0931f8da0b4e5e48
+- [imported] G4S1W6- Language content summary.pdf → c63b2bb7d0cb27e6
+- [imported] G4S1W7- Homework.docx → 12eb19664b6e475e
+- [imported] G4S1W7- Language content summary.pdf → 4192c778892d240a
+- [imported] G4S1W8- Language content summary.pdf → fbce331594eacbb7
+- [imported] IMG_5757.PNG → 1b1b42881c16dfb0
+- [ignored metadata] KIDS' STORIES/._03 曲目 3.wma
+- [ignored metadata] KIDS' STORIES/._04 曲目 4.wma
+- [ignored metadata] KIDS' STORIES/._05 曲目 5.wma
+- [ignored metadata] KIDS' STORIES/._06 曲目 6.wma
+- [ignored metadata] KIDS' STORIES/._07 曲目 7.wma
+- [imported] KIDS' STORIES/01 曲目 1.wma → 17184a388138bf78
+- [imported] KIDS' STORIES/02 曲目 2.wma → 9c6dfe02450f0531
+- [imported] KIDS' STORIES/03 曲目 3.wma → 74fe81c41a36d6ce
+- [imported] KIDS' STORIES/04 曲目 4.wma → 8f8635d122bcc257
+- [imported] KIDS' STORIES/05 曲目 5.wma → 070248e75b0a46c1
+- [imported] KIDS' STORIES/06 曲目 6.wma → a06684b85ae01e7f
+- [imported] KIDS' STORIES/07 曲目 7.wma → 121f0e6573fe6839
+- [imported] KIDS' STORIES/08 曲目 8.wma → 8118df51802c22de
+- [imported] KIDS' STORIES/09 曲目 9.wma → 1cfcf172d2fb784e
+- [imported] KIDS' STORIES/10 曲目 10.wma → 9f4cb53eb692daa7
+- [imported] KIDS' STORIES/11 曲目 11.wma → 7fdc4fce958d804a
+- [imported] KIDS' STORIES/12 曲目 12.wma → 222bc5ce9f954a5f
+- [imported] KIDS' STORIES/13 曲目 13.wma → 938287f2f47742ba
+- [imported] Mid 1.pdf → f57c6251a66b958f
+- [imported] Mid 2.pdf → 9a7868f2397850f1
+- [imported] Mid-3 Reading .pdf → 413c199351bc2773
+- [imported] dialogue 1.mp3 → 98afe249e4b50ab0
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Review 1/Review 1 - 1.mp3 → d25f149fa1abbf10
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Review 1/Review 1 - 2.mp3 → 15a660fcb6ab69c5
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Review 1/Review 1 - 3.mp3 → c413495081703e2b
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Review 1/Review 1 - 4.mp3 → 0534ffc6d9221979
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Review 1/Review 1 - 5.mp3 → be199235e28103da
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Review 2/Review 2 - 1.mp3 → fd0247e01e9a0e06
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Review 2/Review 2 - 2.mp3 → c4873fbd832d0423
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Review 2/Review 2 - 3.mp3 → d02a367e11507f88
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Review 2/Review 2 - 4.mp3 → 8e91236deed6b7d6
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Review 2/Review 2 - 5.mp3 → c8626b8eed47b0cf
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Review 2/Review 2 - 6.mp3 → 677bd5e25dffd024
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Revision/Revision 1 - 1.mp3 → a7fd97b286a154d1
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Revision/Revision 2 - 1.mp3 → be11b8e3512eb79d
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 1A/Unit 1A - let's learn.mp3 → 298db5e4d26e9786
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 1A/Unit 1A - let's spell - 1.mp3 → 4049c8b35bb286b2
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 1A/Unit 1A - let's spell - 2.mp3 → 7997bf01c7416d16
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 1A/Unit 1A - let's talk.mp3 → 597c7d59d357288e
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 1B/Unit 1B - let's learn.mp3 → 83c64e54b799d7b1
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 1B/Unit 1B - let's talk.mp3 → 1027e0e0456fdad8
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 2A/Unit 2A - let's learn.mp3 → 4c5334b1ccefc53c
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 2A/Unit 2A - let's spell.mp3 → 78aeee7fe29f6264
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 2A/Unit 2A - let's talk.mp3 → cc213db2a9a2b041
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 2B/Unit 2B - let's learn.mp3 → 5e65ec3e70dffb75
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 2B/Unit 2B - let's talk.mp3 → 999684d521fa89c1
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 3A/Unit 3A - let's learn.mp3 → c865864728b104bf
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 3A/Unit 3A - let's spell - 1.mp3 → efd3576b417563db
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 3A/Unit 3A - let's spell - 2.mp3 → 8cf156f3c73a55cf
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 3A/Unit 3A - let's talk.mp3 → 8d0388f583e9fddb
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 3B/Unit 3B - let's learn.mp3 → 50484d71c11de2cd
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 3B/Unit 3B - let's talk.mp3 → f6ee11f90727b920
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 4A/Unit 4A - Let's learn.mp3 → 5a3d1fc217aa420e
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 4A/Unit 4A - Let's spell.mp3 → 6ef1b6f99e0934c2
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 4A/Unit 4A - Let's talk.mp3 → e9270afac683f810
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 4B/Unit 4B - Let's learn.mp3 → 5820bd0a9d91f47a
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 4B/Unit 4B - Let's talk.mp3 → 74b088efc89b1d3a
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 5A/Unit 5A - Let's learn - 1.mp3 → 0af07ac3b8edd6ba
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 5A/Unit 5A - Let's learn - 2.mp3 → f7167bebaaa44158
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 5A/Unit 5A - Let's spell.mp3 → 1d17fe6f6ba89cdd
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 5A/Unit 5A - Let's talk.mp3 → e75d7d393736921b
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 5B/Unit 5B - Let's learn.mp3 → 5a6327461672c12a
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 5B/Unit 5B - Let's talk.mp3 → b9042c4dda6c8a7b
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 6A/Unit 6A - Let's learn.mp3 → 37a94da3825396a5
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 6A/Unit 6A - Let's spell - 1.mp3 → 40a63e04a6ec5cc3
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 6A/Unit 6A - Let's spell - 2.mp3 → 2f7f4244078e5587
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 6A/Unit 6A - Let's talk.mp3 → c72a07bab44a21ed
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 6B/Unit 6B - Let's learn.mp3 → 55963d32e37fb44c
+- [duplicate] 四上英语录音包/2025秋 英语作业本 四年级上册/Unit 6B/Unit 6B - Let's talk.mp3 → 1b9a36b2a295c942
+- [ignored metadata] 四上英语录音包/KIDS' STORIES/._03 曲目 3.wma
+- [ignored metadata] 四上英语录音包/KIDS' STORIES/._04 曲目 4.wma
+- [ignored metadata] 四上英语录音包/KIDS' STORIES/._05 曲目 5.wma
+- [ignored metadata] 四上英语录音包/KIDS' STORIES/._06 曲目 6.wma
+- [ignored metadata] 四上英语录音包/KIDS' STORIES/._07 曲目 7.wma
+- [duplicate] 四上英语录音包/KIDS' STORIES/01 曲目 1.wma → 17184a388138bf78
+- [duplicate] 四上英语录音包/KIDS' STORIES/02 曲目 2.wma → 9c6dfe02450f0531
+- [duplicate] 四上英语录音包/KIDS' STORIES/03 曲目 3.wma → 74fe81c41a36d6ce
+- [duplicate] 四上英语录音包/KIDS' STORIES/04 曲目 4.wma → 8f8635d122bcc257
+- [duplicate] 四上英语录音包/KIDS' STORIES/05 曲目 5.wma → 070248e75b0a46c1
+- [duplicate] 四上英语录音包/KIDS' STORIES/06 曲目 6.wma → a06684b85ae01e7f
+- [duplicate] 四上英语录音包/KIDS' STORIES/07 曲目 7.wma → 121f0e6573fe6839
+- [duplicate] 四上英语录音包/KIDS' STORIES/08 曲目 8.wma → 8118df51802c22de
+- [duplicate] 四上英语录音包/KIDS' STORIES/09 曲目 9.wma → 1cfcf172d2fb784e
+- [duplicate] 四上英语录音包/KIDS' STORIES/10 曲目 10.wma → 9f4cb53eb692daa7
+- [duplicate] 四上英语录音包/KIDS' STORIES/11 曲目 11.wma → 7fdc4fce958d804a
+- [duplicate] 四上英语录音包/KIDS' STORIES/12 曲目 12.wma → 222bc5ce9f954a5f
+- [duplicate] 四上英语录音包/KIDS' STORIES/13 曲目 13.wma → 938287f2f47742ba
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_1.0.mp3 → 0786e584a6735b12
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_1.1.mp3 → 57874295744f5ecf
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_1.2.mp3 → 9c69ded265d08042
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_1.3.mp3 → 0fd186325d792534
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_1.4.mp3 → 7b2b7e585ff3bfb3
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_1.5.mp3 → 466366bbc2eb41f9
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_1.6.mp3 → d1319d34499696b3
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_1.7.mp3 → 55c800b522781fbf
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_1.8.mp3 → 63386a728d53db54
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_10.1.mp3 → 9b18b73f80fabe6e
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_2.1.mp3 → 559340b762326732
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_2.2.mp3 → ef067e73a11a1b2a
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_2.3.mp3 → 8f1b99006eae5afe
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_2.4.mp3 → 0f578cd0d855ae03
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_2.5.mp3 → d169555a35a4a299
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_2.6.mp3 → 481e62800b1a850f
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_2.7.mp3 → 7b44f6492bab31d3
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.1.mp3 → 76581ebd0160aadf
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.10.mp3 → 570767634debe9eb
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.11.mp3 → 5da1882ec79fc28a
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.12.mp3 → c2b0b496f6f2a4c5
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.13.mp3 → 5a8f6646b9d13466
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.2.mp3 → 1eaf1c7a47d2a855
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.3.mp3 → 7c0ff73aa1e6001f
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.4.mp3 → f6d092581803c048
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.5.mp3 → d0ae2e1b3075b477
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.6.mp3 → 26df927af9e23ef9
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.7.mp3 → 41325f950e513919
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.8.mp3 → 00a0f79cabbabe97
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_3.9.mp3 → 71dbf2681a1f9915
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_4.1.mp3 → d22704d9ac701575
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_4.2.mp3 → af6df3019db59a67
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_4.3.mp3 → 86c8b976dc90c0db
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_4.4.mp3 → 59f5da393dab07d1
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_4.5.mp3 → 0c073c207a08b19f
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_4.6.mp3 → 00174627b989a6f7
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_4.7.mp3 → c3c560539bb9720a
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_4.8.mp3 → db482f36b9e906f3
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_4.9.mp3 → 6276ba40810179cc
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_5.1.mp3 → ab7ed4eff8f56857
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_5.2.mp3 → 1cac8a1eff8e4487
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_5.3.mp3 → 5594016e91842548
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_5.4.mp3 → a9246607d80a9d4d
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_5.5.mp3 → bb87b0a4252a0983
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_5.6.mp3 → 0da8ff0f0d336bb0
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_5.7.mp3 → 881ed8ca681fa76f
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.1.mp3 → 8d69b402688f7239
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.10.mp3 → f1b89b3d044aefc4
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.11.mp3 → 803ee592a06bf4cd
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.12.mp3 → e790cdb359c7fb61
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.13.mp3 → 1a731fa5cbcfaf95
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.14.mp3 → 29dcc701211c97db
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.15.mp3 → a73fd24b486530d8
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.2.mp3 → 8eee0d858f42d854
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.3.mp3 → 9fece5d80cf1c118
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.4.mp3 → cc2cab3f7086c37a
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.5.mp3 → 193fa0173140a2b8
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.6.mp3 → 748dcc7f57079b2c
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.7.mp3 → 1c86d16e7407b7de
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.8.mp3 → 2fd2d77a211aba65
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_6.9.mp3 → 3b4e0b00bf3fbc68
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_7.1.mp3 → 02f8864ee444f2ec
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_7.2.mp3 → a4e8ae3f167a1059
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_7.3.mp3 → 1fa5bf2e110dadb9
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_7.4.mp3 → c4ea4f800bb2ea4f
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_7.5.mp3 → 54171e9056a5cd43
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_7.6.mp3 → f5ec92fb78dbc9e0
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_7.7.mp3 → c8df6b1097387d73
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_7.8.mp3 → 8d743ff2c0bf17b3
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_7.9.mp3 → 1db1de7614a1a620
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_8.1.mp3 → 20edf269adb83eee
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_8.2.mp3 → b68372c231124fb1
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_8.3.mp3 → d8ccd1443320a342
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_8.4.mp3 → af2eb8bde5930161
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_8.5.mp3 → ab7329ce27b2cd14
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_8.6.mp3 → d9ae33f3e2c92a77
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_8.7.mp3 → 9263cbd8f9769090
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.10_0.mp3 → 8b15c530b6f70d1d
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.11_0.mp3 → 8d4a9a1f132aa34b
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.12_0.mp3 → 3ea98b53f6c2d84e
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.13_0.mp3 → 7e1bb5e4d191e161
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.14_0.mp3 → 70e935ecba7ab349
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.1_0.mp3 → c951b6f50b38ffb9
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.2_0.mp3 → ae66125a546eb17b
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.3_0.mp3 → 8a83e3cf098b4b33
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.4_0.mp3 → 55e8d833837ea82f
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.5_0.mp3 → 4ff7fc101c9a12f7
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.6_0.mp3 → 1264a80373390929
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.7_0.mp3 → db47083ac259c904
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.8.mp3 → cf7175d21b687f13
+- [imported] 四上英语录音包/OW/ow2e_sb4_ame_9.9.mp3 → 77b410ed20d6453c
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_1.0.mp3 → e2b5520251041fc5
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_1.1.mp3 → b40ba7fae90607b4
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_1.2.mp3 → ec7c47196a701457
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_1.3.mp3 → 8e12b6bbd3b70539
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_1.4.mp3 → d41a947e6a609ddc
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_2.1.mp3 → d45d41c2a2c6d44d
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_2.2.mp3 → 1c133e968bb38e7b
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_2.3.mp3 → 06572102e7c1a45f
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_2.4.mp3 → 5a689ca5af484935
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_2.5.mp3 → e85de0f7e13999b4
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_2.6.mp3 → 5addb940ae2c7874
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_3.1.mp3 → 05ac65b9bd41d70c
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_3.2.mp3 → 4ea7a6c890f4f4db
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_3.3.mp3 → da5f9e31825ab73d
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_3.4.mp3 → c22e511c7c6471d2
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_3.5.mp3 → 60411669edfff7d7
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_3.6.mp3 → 266d9d22ed71f8c8
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_3.7.mp3 → 319debd18fd99092
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_4.1.mp3 → c2207bb61e9a4135
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_4.2.mp3 → a2f504ed6c0a7569
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_4.3.mp3 → 20206c39e803db86
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_4.4.mp3 → e9fc5eb808153435
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_5.1.mp3 → 56ede318132f36fa
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_5.2.mp3 → 73b48dd1d4595a2c
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_5.3.mp3 → 8c00907980929f7d
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_5.4.mp3 → 9ac32815f5ee03fc
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_5.5.mp3 → 4c1559dfcd19f131
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_5.6.mp3 → 1a351d87b3b64667
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_6.1.mp3 → c5f1b08d570d393f
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_6.2.mp3 → c6c2ac09b960d470
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_6.3.mp3 → dc63c0f10e60f2f3
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_6.4.mp3 → 7692ce3133314b54
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_6.5.mp3 → 3acfea96c8110bcf
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_7.1.mp3 → ffcd0934b84bde87
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_7.2.mp3 → 279a3b7c81a3f12e
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_7.3.mp3 → b5409539889bbd25
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_7.4.mp3 → 7f700ba15013f851
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_7.5.mp3 → 61f90499d17c09dd
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_7.6.mp3 → 773d22a0ef6a8fc4
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_8.1.mp3 → c787bd5b16f301f3
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_8.2.mp3 → 1e1b4adc7fe1143c
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_8.3.mp3 → a024f95c27a7f89c
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_8.4.mp3 → 978a84edd7fe285d
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_8.5.mp3 → 57de488d27f44bc5
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_8.6.mp3 → 1466a09de2cdb756
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_9.1.mp3 → d49fadb8da8eb15d
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_9.2.mp3 → 189992d8a3f05b82
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_9.3.mp3 → 0775a8674b2105e0
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_9.4.mp3 → f4c76c48fb33aa16
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_9.5.mp3 → 28119cc6b1aa0ca0
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_9.6.mp3 → cdbd39f6ba43bfd2
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_9.7.mp3 → 820d69dc9f45e808
+- [imported] 四上英语录音包/OW 练习册/ow2e_wb4_ame_9.8.mp3 → f62aa0580ae11cd9
+- [imported] 四上英语录音包/PEP/四上U1/01 Unit1 Listen and chant.mp3 → 8514b8ed1177307e
+- [imported] 四上英语录音包/PEP/四上U1/02 Unit1Listen and sing.mp3 → 2dc0c30d930a777a
+- [imported] 四上英语录音包/PEP/四上U1/03 Unit1 A Let‘s talk.mp3 → 70f2c078a8303c1d
+- [imported] 四上英语录音包/PEP/四上U1/04 Unit1 A Let‘s spell Listen.mp3 → 6a4eeaa2bc6559a4
+- [imported] 四上英语录音包/PEP/四上U1/05 Unit1 A Let‘s spell Read.mp3 → 5fbd35bc9b0c6be7
+- [imported] 四上英语录音包/PEP/四上U1/06 Unit1 A Let‘s spell Look.mp3 → ee07ae3e0ac280b6
+- [imported] 四上英语录音包/PEP/四上U1/07 Unit1 B Let‘s talk.mp3 → 676d0301139299a1
+- [imported] 四上英语录音包/PEP/四上U1/08 Unit1 B Listen and chant.mp3 → e826bdd2474cb958
+- [imported] 四上英语录音包/PEP/四上U1/09 Unit1 B Read and write.mp3 → 9806b299fe7bbc88
+- [imported] 四上英语录音包/PEP/四上U1/10 Unit1 C Project.mp3 → f1b587f83bddf1ce
+- [imported] 四上英语录音包/PEP/四上U1/11 Words in each unit_Unit1.mp3 → 0325a6b05d86f301
+- [imported] 四上英语录音包/PEP/四上U2/01 Unit2 Listen and chant.mp3 → 46ed37e1ebcf0298
+- [imported] 四上英语录音包/PEP/四上U2/02 Unit2 Listen and sing.mp3 → 295e7b1e9e5098c3
+- [imported] 四上英语录音包/PEP/四上U2/03 Unit2 A Let‘s talk.mp3 → e591d8854f84734b
+- [imported] 四上英语录音包/PEP/四上U2/04 Unit2 A Listen and chant.mp3 → 942fdb005bd7705a
+- [imported] 四上英语录音包/PEP/四上U2/05 Unit2 A Let‘s spell Listen.mp3 → 58b10f7f5bdd09ba
+- [imported] 四上英语录音包/PEP/四上U2/06 Unit2 A Let‘s spell Read.mp3 → fdfc56751efa53b9
+- [imported] 四上英语录音包/PEP/四上U2/07 Unit2 A Let‘s spell Look.mp3 → 17c2fb4929363c43
+- [imported] 四上英语录音包/PEP/四上U2/08 Unit2 B Let‘s talk.mp3 → 71b97e2fbb0dba33
+- [imported] 四上英语录音包/PEP/四上U2/09 Unit 2 B Read and write.mp3 → 4c9b2795ac86eee1
+- [imported] 四上英语录音包/PEP/四上U2/10 Unit 2 C Project1.mp3 → b12bb6a541e7f597
+- [imported] 四上英语录音包/PEP/四上U2/11 Words in each unit Unit2.mp3 → 53f8a5ca9b5a2bb3
+- [imported] 四上英语录音包/PEP/四上U3/01 Listen and chant.mp3 → c32ed86d157d5023
+- [imported] 四上英语录音包/PEP/四上U3/02 Listen and sing.mp3 → 07d6b17c6be45038
+- [imported] 四上英语录音包/PEP/四上U3/03 A Let's talk.mp3 → dfdf4e413c93ab74
+- [imported] 四上英语录音包/PEP/四上U3/04 A Let's spell  Listen, repeat and chant..mp3 → b3431c3f7c9fb92e
+- [imported] 四上英语录音包/PEP/四上U3/05 A Let's spell  Read, listen and tick..mp3 → ef985fc1265b936d
+- [imported] 四上英语录音包/PEP/四上U3/06 A Let's spell  Look, listen and write..mp3 → faacbdfbefeaab8c
+- [imported] 四上英语录音包/PEP/四上U3/07 B Let's talk.mp3 → 91f3ce97856468ca
+- [imported] 四上英语录音包/PEP/四上U3/08 B Listen and do.mp3 → d56c0149fd55eea1
+- [imported] 四上英语录音包/PEP/四上U3/09 B Read and write.mp3 → a1d276ab8dc76bba
+- [imported] 四上英语录音包/PEP/四上U3/10 C Project.mp3 → 76c730433e8b8c04
+- [imported] 四上英语录音包/PEP/四上U3/四上U3 PDF-done.pdf → fbcfd499adf18db1
+- [imported] 四上英语录音包/PEP/四上U4/Unit 4 A Let's spell Listen, repeat and chant.mp3 → ef654c0847244791
+- [imported] 四上英语录音包/PEP/四上U4/Unit 4 A Let's spell Look, listen and write.mp3 → 6a66d8e73a4e8afb
+- [imported] 四上英语录音包/PEP/四上U4/Unit 4 A Let's spell Read, listen and number.mp3 → 382d9554e420bbc1
+- [imported] 四上英语录音包/PEP/四上U4/Unit 4 A Let's talk.mp3 → baef00ba04985db6
+- [imported] 四上英语录音包/PEP/四上U4/Unit 4 B Let's talk.mp3 → ea818b2dd52d5fd5
+- [imported] 四上英语录音包/PEP/四上U4/Unit 4 B Read and write.mp3 → 082b19db145122ec
+- [imported] 四上英语录音包/PEP/四上U4/Unit 4 C Project.mp3 → 3284cf1738156fd4
+- [imported] 四上英语录音包/PEP/四上U4/Unit 4 Listen and chant.mp3 → 5e02575d363c09b5
+- [imported] 四上英语录音包/PEP/四上U4/Unit 4 Listen and sing.mp3 → b1ebd48db0273310
+- [imported] 四上英语录音包/PEP/四上U4/Words in each unit Unit 4.mp3 → 67314ec4de928bdd
+- [imported] 四上英语录音包/PEP/四上U5/Unit 5 A Let's spell Listen and repeat. Then read aloud.mp3 → 9ca478201b04bad9
+- [imported] 四上英语录音包/PEP/四上U5/Unit 5 A Let's spell Look, listen and write.mp3 → 0a4143a8fe3586e3
+- [imported] 四上英语录音包/PEP/四上U5/Unit 5 A Let's spell Read, listen and circle.mp3 → de3de0e170273759
+- [imported] 四上英语录音包/PEP/四上U5/Unit 5 A Let's talk.mp3 → 6aa31797a4bd565c
+- [imported] 四上英语录音包/PEP/四上U5/Unit 5 B Let's talk.mp3 → 7a25c03c166ffdb8
+- [imported] 四上英语录音包/PEP/四上U5/Unit 5 B Read and write.mp3 → c0e6f484a38f3c82
+- [imported] 四上英语录音包/PEP/四上U5/Unit 5 C Project.mp3 → d1cf1586977a806c
+- [imported] 四上英语录音包/PEP/四上U5/Unit 5 Listen and chant.mp3 → 2bb5e9e6f2249f96
+- [imported] 四上英语录音包/PEP/四上U5/Unit 5 Listen and sing.mp3 → 29c834b25da65424
+- [imported] 四上英语录音包/PEP/四上U5/Words in each unit Unit 5.mp3 → 063ff572451b04ce
+- [imported] 四上英语录音包/PEP/四上U6/Unit 6 A Let's spell Listen, repeat and chant.mp3 → 9a7a9ceefdb1552e
+- [imported] 四上英语录音包/PEP/四上U6/Unit 6 A Let's spell Look, listen and write.mp3 → 8d895947ee2b508f
+- [imported] 四上英语录音包/PEP/四上U6/Unit 6 A Let's spell Read, listen and circle.mp3 → 522e14bb1275bde0
+- [imported] 四上英语录音包/PEP/四上U6/Unit 6 A Let's talk.mp3 → ad31fbd13407103f
+- [imported] 四上英语录音包/PEP/四上U6/Unit 6 B Let's talk.mp3 → e66dad48387bbced
+- [imported] 四上英语录音包/PEP/四上U6/Unit 6 B Read and write.mp3 → c32bc44d92b80645
+- [imported] 四上英语录音包/PEP/四上U6/Unit 6 C Project.mp3 → 28e7bef17bf53333
+- [imported] 四上英语录音包/PEP/四上U6/Unit 6 Listen and chant.mp3 → 2516c4d2c0440525
+- [imported] 四上英语录音包/PEP/四上U6/Unit 6 Listen and sing.mp3 → 6c1df13615f72ee3
+- [imported] 四上英语录音包/PEP/四上U6/Words in each unit Unit 6.mp3 → 7d393a9ae543b940
+- [duplicate] 四上英语录音包/背诵内容/dialogue 1.mp3 → 98afe249e4b50ab0

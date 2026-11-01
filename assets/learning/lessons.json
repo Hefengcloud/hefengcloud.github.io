@@ -1,0 +1,146 @@
+{
+  "words": [
+    [
+      "people",
+      "外貌与性格",
+      "W2 / W6 · Mid 2",
+      "用 is 描述特征，用 has 描述拥有的身体特征。",
+      "tall|高的,strong|强壮的,quiet|安静的,kind|友善的,thin|瘦的,helpful|乐于助人的,popular|受欢迎的,clever|聪明的,athletic|擅长运动的,bald|秃头的,curly hair|卷发,straight hair|直发,wavy hair|波浪形头发",
+      "She is helpful. She has long hair."
+    ],
+    [
+      "jobs",
+      "职业与梦想",
+      "W4 / W6 · Mid 2",
+      "说出工作地点，再说职业需要的爱好与能力。",
+      "farmer|农民,nurse|护士,doctor|医生,scientist|科学家,architect|建筑师,musician|音乐家,paramedic|急救医护人员,designer|设计师,PE teacher|体育老师,firefighter|消防员,police officer|警察,factory worker|工厂工人,palaeontologist|古生物学家",
+      "I want to be a firefighter because I want to help people."
+    ],
+    [
+      "places",
+      "我们的社区",
+      "W7 / W8",
+      "把地点和可以做的事情一起记忆。",
+      "hospital|医院,library|图书馆,playground|操场,museum|博物馆,bakery|面包店,theatre|剧院,post office|邮局,square|广场,clock tower|钟楼,roundabout|环岛,traffic lights|交通信号灯,crossroad|十字路口,T-junction|丁字路口,supermarket|超市",
+      "There is a library. I read books there."
+    ],
+    [
+      "chores",
+      "家务与日常",
+      "W3 / W6 · Mid 2",
+      "用动词短语描述你为家人做的事。",
+      "clean the room|打扫房间,water the plants|给植物浇水,feed the pet|喂宠物,do the dishes|洗碗,sweep the floor|扫地,make breakfast|做早餐,walk the dog|遛狗,make a gift|做礼物,look after|照顾",
+      "I often water the plants."
+    ],
+    [
+      "garden",
+      "菜园与食物",
+      "Our World U2 · Mid 2",
+      "按种植顺序记忆：dig → plant → water → weed → pick。",
+      "pumpkin|南瓜,lettuce|生菜,cucumber|黄瓜,cabbage|卷心菜,onion|洋葱,eggplant|茄子,green beans|四季豆,zucchini|西葫芦,tomato|番茄,dig|挖,plant|种植,weed|除草,pick|采摘",
+      "We have to water the garden three times a week."
+    ]
+  ],
+  "grammar": [
+    [
+      "is-has",
+      "is 与 has",
+      "W2 / W6",
+      "is + 形容词；has + 名词（身体特征）。否定：is not / doesn’t have。",
+      "She is tall. → She is not tall.\nHe has short hair. → He doesn’t have long hair.",
+      "介绍朋友：写一句 is 和一句 has。"
+    ],
+    [
+      "frequency",
+      "习惯与频率",
+      "W2 / W6 · Mid 2",
+      "always → often → sometimes → never。he / she 后的实义动词通常加 -s；次数用 once / twice / three times。",
+      "She often helps me.\nHow often do you water the garden?\nThree times a week.",
+      "用 often 描述朋友每周做的事。"
+    ],
+    [
+      "plans",
+      "现在进行时与未来计划",
+      "W3 / W6",
+      "am / is / are + 动词-ing。加上 tomorrow / next week 等未来时间，可以表示已安排的计划。",
+      "I am visiting my grandparents tomorrow.\nAre you coming to school next week?\nWhat are you doing on Monday?",
+      "将 I am cleaning my room tomorrow. 改为否定句。"
+    ],
+    [
+      "compare",
+      "比较级：发现不同",
+      "Our World U1 · Mid 2",
+      "常见变化：tall → taller；big → bigger；friendly → friendlier；beautiful → more beautiful；good → better；bad → worse。比较时用 than。",
+      "The girl is faster than the boy.\nWhich is smaller, the dog or the cat?",
+      "用 taller than 比较两个人。"
+    ],
+    [
+      "there",
+      "There is / There are",
+      "W7 / W8",
+      "单数用 There is，多数用 There are。提问时把 is / are 移到前面。",
+      "There is a park in my community.\nThere are two shops.\nIs there a library?",
+      "介绍社区中的一个地点和多个地点。"
+    ],
+    [
+      "likes",
+      "爱好、能力与责任",
+      "W4 · Mid 2",
+      "like / be good at 后可接名词或动词-ing。have to 表示必须，he / she 用 has to。would like to 后接动词原形。",
+      "I like painting. I’m good at art.\nShe has to feed the pet.\nI’d like to play games.",
+      "用 like 和 good at 说明你的理想职业。"
+    ]
+  ],
+  "expressions": [
+    [
+      "friend",
+      "介绍我的朋友",
+      "W2 · Mid 2",
+      "名字 → 外貌 → 性格 → 爱好 → 我们一起做的事。",
+      "My best friend is Lily.\nShe is kind and quiet.\nShe has long hair.\nWe often read books together.",
+      "介绍一个朋友，至少说 5 句。"
+    ],
+    [
+      "directions",
+      "问路与指路",
+      "W7 / W8",
+      "先说沿哪条路走，再说在哪转弯，最后说目的地的位置。",
+      "Where is the library?\nGo along Main Street.\nTake the first right.\nIt’s on your left, opposite the park.",
+      "画一个小地图，给家人指路。"
+    ],
+    [
+      "dream",
+      "我的理想职业",
+      "W4 · Mid 2",
+      "I want to be… + because…；给出爱好、能力和帮助他人的理由。",
+      "I want to be a teacher.\nI like working with children.\nI’m good at English.\nI want to help children learn.",
+      "选择一个职业，说明三个理由。"
+    ],
+    [
+      "weekend",
+      "我的周末计划",
+      "W3 · 期中口语",
+      "开头介绍主题，中间讲计划与时间，最后用一句话收尾。",
+      "Here are my plans for this weekend.\nI’m visiting my grandparents on Saturday.\nI’m not going to school on Sunday.\nThese are my weekend plans.",
+      "说 8 句：开头 + 6 句内容 + 结尾。"
+    ]
+  ],
+  "pep_phonics": [
+    [
+      "ck",
+      "ck：两个字母，一个音",
+      "PEP U3 · 教材 PDF",
+      "ck 发 /k/。先听，再读，然后遮住单词尝试拼写。",
+      "back · black · duck · sock · tick",
+      "找出这些词中相同的结尾声音。"
+    ],
+    [
+      "spelling",
+      "听音、分音、拼写",
+      "PEP / 作业本 U1–6 音频",
+      "打开下面的 Let’s spell 音轨，先听一遍，再模仿，最后写下听到的单词。其他单元以原音频为准。",
+      "Listen → Say → Cover → Write → Check",
+      "把听错的词记在学习本里。"
+    ]
+  ]
+}
